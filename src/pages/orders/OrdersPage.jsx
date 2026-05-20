@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useState, useEffect , Fragment } from 'react';
-import { Header } from '../components/Header';
+import { Header } from '../../components/Header';
 import { Link } from 'react-router';
-import { formatMoney } from '../utils/money';
+import { formatMoney } from '../../utils/money';
 import dayjs from 'dayjs';
 import './OrdersPage.css'
 
@@ -52,7 +52,7 @@ export function OrdersPage({ cart }) {
                     return (
                       <Fragment key={orderProduct.product.id}>
                         <div className="product-image-container">
-                          <img src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                          <img src={orderProduct.product.image}/>
                         </div>
 
                         <div className="product-details">
@@ -81,34 +81,6 @@ export function OrdersPage({ cart }) {
                       </Fragment>
                     );
                   })}
-
-                  <div className="product-image-container">
-                    <img src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
-                  </div>
-
-                  <div className="product-details">
-                    <div className="product-name">
-                      Adults Plain Cotton T-Shirt - 2 Pack
-                    </div>
-                    <div className="product-delivery-date">
-                      Arriving on: August 19
-                    </div>
-                    <div className="product-quantity">
-                      Quantity: 2
-                    </div>
-                    <button className="buy-again-button button-primary">
-                      <img className="buy-again-icon" src="images/icons/buy-again.png" />
-                      <span className="buy-again-message">Add to Cart</span>
-                    </button>
-                  </div>
-
-                  <div className="product-actions">
-                    <Link to="/tracking">
-                      <button className="track-package-button button-secondary">
-                        Track package
-                      </button>
-                    </Link>
-                  </div>
                 </div>
               </div>
             );
