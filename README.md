@@ -25,3 +25,54 @@ The project was created for learning React, component structure, routing, and fr
 - Built for learning React and TypeScript
 - Uses reusable React components
 - Developed using Vite
+
+---
+
+## Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/RudraPatel648/Ecommerce-Website.git
+```
+
+Move into the project directory:
+
+```bash
+cd Ecommerce-Website
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the frontend development server:
+
+```bash
+npm run dev
+```
+
+Open another terminal and move to the backend folder:
+
+```bash
+cd ecommerce-backend
+```
+
+Install backend dependencies:
+
+```bash
+npm install
+```
+Run the backend server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```bash
+http://localhost:5173
+```
