@@ -58,4 +58,4 @@ describe('Homepage Components', () => {
             within(productContainer[1]).getByText('Intermediate Size Basketball')
         ).toBeInTheDocument();
     })
-})
+});
